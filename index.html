@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Ecommerce Clothes Business</title>
+    <title>Trendy Threads</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Clothes E-Commerce</h1>
+        <h1>Trendy Threads e-commerce shop</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -17,9 +17,16 @@
             </ul>
         </nav>
     </header>
+   
+    <div class="auth-form">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
 
     <section id="home">
         <h2>Welcome to Our Clothing Store</h2>
+        <h2>Beauty meets elegancy!</h2>
         <p>Discover the latest trends in fashion.</p>
         <p>We offer a wide range of trendy and stylish clothes for men and women.</p>
         <button>Explore Now</button>
@@ -90,9 +97,63 @@
             </div>
         </div>
     </section>
+    <div class="filter-sort">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="clothing">Clothing</option>
+          <option value="accessories">Accessories</option>
+          <!-- Add more categories as needed -->
+        </select>
+      
+        <label for="price-range">Price:</label>
+        <input type="range" id="price-range" min="0" max="500" step="10" />
+      
+        <label for="sort">Sort By:</label>
+        <select id="sort">
+          <option value="popularity">Popularity</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+        </select>
+      </div>
+
+      <div class="search-bar">
+  <input type="text" id="search" placeholder="Search products..." />
+</div>
+
+<div class="cart-wishlist">
+    <div id="cart">
+      <h2>Shopping Cart</h2>
+      <!-- Items will be dynamically added here -->
+    </div>
+    <div id="wishlist">
+      <h2>Wishlist</h2>
+      <!-- Wishlist items here -->
+    </div>
+  </div>
+  
+  <div class="product-review">
+    <textarea id="review-text" placeholder="Write a review..."></textarea>
+    <select id="rating">
+      <option value="1">1 Star</option>
+      <option value="2">2 Stars</option>
+      <option value="3">3 Stars</option>
+      <option value="4">4 Stars</option>
+      <option value="5">5 Stars</option>
+    </select>
+    <button onclick="submitReview()">Submit Review</button>
+  </div>
+  <div id="reviews"></div>
+  
+
+
+
+
 
     <section id="contact">
         <h2>Contact Us</h2>
+        <h2>jimmaculate20@gmail.com</h2>
+        <h2>Immaculate Bett</h2>
         <p>Don't miss out on our latest deals and discounts! Sign up for our newsletter today.</p>
         <form id="contact-form">
             <label for="name">Name:</label>

@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #d40404;
+    background: #8a6179;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -50,11 +50,81 @@ section {
     width: 200px;
 }
 
+.filter-sort {
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .filter-sort label, .filter-sort select, .filter-sort input {
+    font-size: 0.9rem;
+  }
+  
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  .cart-wishlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .cart-wishlist div {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #9e2323;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+  }
+  .auth-form input, .auth-form button {
+    padding: 8px;
+  }
+  
+  .product-review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .product-review textarea {
+    width: 100%;
+    padding: 8px;
+  }
+  
+/* Basic responsive styling */
+@media (max-width: 768px) {
+    .filter-sort, .cart-wishlist {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .product-review, .search-bar {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
 
 img {
     height: 132px;
     height: 132px;
 }
+
 
 footer {
     background: #790c0c;
@@ -79,7 +149,7 @@ form label {
 form input, form textarea {
     width: 100%;
     padding: 0.5em;
-    border: 1px solid #ccc;
+    border: 1px solid #ad1515;
 }
 
 form button {
